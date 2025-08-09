@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Montamos sua Festa - Tudo em 1</title>
+  <title>Aurora Party Festas</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -65,19 +65,26 @@
 
     #g:target, #m:target, #p:target, #pp:target {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2rem;
-      color: #ff6f00;
       flex-direction: column;
+      align-items: center;
       padding: 2rem;
-      text-align: center;
+      color: #333;
     }
 
-    .detalhe img {
-      max-width: 300px;
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .galeria img {
+      width: 100%;
+      max-width: 480px;
       height: auto;
-      margin-bottom: 1rem;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
 
     .voltar {
@@ -95,6 +102,14 @@
     .voltar:hover {
       background-color: #ff6f00;
       color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      background: #f4f4f4;
+      color: #666;
     }
   </style>
 </head>
@@ -148,32 +163,34 @@
   </div>
 
   <!-- Página G -->
-  <div id="g" class="detalhe">
-    <img src="baloes.png" alt="Balões de festa G">
+  <div id="g">
     <h2>Festa Tamanho G</h2>
-    <p>Pacote completo para grandes eventos. Ideal para mais de 80 convidados.</p>
+    <p style="max-width: 600px; text-align: center;">Pacote completo para grandes eventos. Ideal para mais de 80 convidados. Veja abaixo uma amostra real da decoração:</p>
+
+    <div class="galeria">
+      <img src="festa-g-1.png" alt="Decoração festa G - imagem 1">
+      <img src="festa-g-2.png" alt="Decoração festa G - imagem 2">
+    </div>
+
     <a href="#home" class="voltar">Voltar para a página principal</a>
   </div>
 
   <!-- Página M -->
-  <div id="m" class="detalhe">
-    <img src="baloes.png" alt="Balões de festa M">
+  <div id="m">
     <h2>Festa Tamanho M</h2>
     <p>Perfeito para festas médias. Inclui decoração, bolo e lembrancinhas para até 50 pessoas.</p>
     <a href="#home" class="voltar">Voltar para a página principal</a>
   </div>
 
   <!-- Página P -->
-  <div id="p" class="detalhe">
-    <img src="baloes.png" alt="Balões de festa P">
+  <div id="p">
     <h2>Festa Tamanho P</h2>
     <p>Pacote prático para celebrações pequenas. Ideal para até 30 pessoas.</p>
     <a href="#home" class="voltar">Voltar para a página principal</a>
   </div>
 
   <!-- Página PP -->
-  <div id="pp" class="detalhe">
-    <img src="baloes.png" alt="Balões de festa PP">
+  <div id="pp">
     <h2>Festa Tamanho PP</h2>
     <p>Compacto e econômico. Perfeito para comemorações rápidas ou aniversários íntimos.</p>
     <a href="#home" class="voltar">Voltar para a página principal</a>
